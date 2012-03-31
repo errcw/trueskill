@@ -1,0 +1,26 @@
+{
+  "name": "trueskill",
+  "description": "A JavaScript implementation of the TrueSkill ranking system",
+  "version": "0.1.0",
+  "author": "Eric Woroshow <eric@ericw.ca>",
+  "homepage": "https://github.com/errcw/trueskill",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/errcw/trueskill.git"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "http://github.com/errcw/trueskill/blob/master/LICENSE"
+  },
+  "main": "lib/trueskill",
+  "scripts": {
+    "test": "nodeunit test"
+  },
+  "engines": {
+    "node": ">= 0.6.0"
+  },
+  "keywords": [ "trueskill", "ranking", "rating" ],
+  "devDependencies": {
+    "nodeunit": "0.7.x"
+  }
+}
