@@ -13,6 +13,7 @@ Import the module.
 
     var trueskill = require('trueskill');
 
+### TrueSkill
 `TrueSkill` encodes parameters about the game.
 
     var env = new trueskill.TrueSkill({
@@ -25,23 +26,23 @@ Import the module.
 
 where
 
-- mu: the initial mean
-- sigma: the initial standard deviation
-- beta: the number of skill points to guarantee an 80% chance of winning
-- tau: the dynamics factor
-- draw: the probability of a draw in [0, 1]
+- `mu`: the initial mean
+- `sigma`: the initial standard deviation
+- `beta`: the number of skill points to guarantee an 80% chance of winning
+- `tau`: the dynamics factor
+- `draw`: the probability of a draw in [0, 1]
 
-
+### Rating
 `Rating` encodes a player's rating.
 
     var rating = new trueskill.Rating(mu, sigma);
 
 where
 
-- mu: the mean value of the rating
-- sigma: the standard deviation of the rating
+- `mu`: the mean value of the rating
+- `sigma`: the standard deviation of the rating
 
-
+### transformRatings
 `transformRatings` calculates updated ratings based prior ratings and the
 outcome of a game.
 
@@ -54,10 +55,10 @@ outcome of a game.
 
 where
 
-- teams: an array of teams, where each team is a map of player id to prior rating
-- ranks: the ranks of the teams, where 1 indicates the winner
+- `teams`: an array of teams, where each team is a map of player id to prior rating
+- `ranks`: the ranks of the teams, where 1 indicates the winner
 
-
+### matchQuality
 `matchQuality` calculates the quality of a match as a function of the probability
 of all teams drawing.
 
